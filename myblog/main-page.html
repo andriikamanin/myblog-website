@@ -12,81 +12,32 @@
 	</head>
 	
 	<body>
-		<div class="wrapper">
-
-			<header class="header">
-				<div class="header__container">
-					<div class="header__logo">
-						<img src="img/Logo horizontal.svg" alt="logo">
-					</div>
-					<div class="header__body">
-						<nav class="header__menu menu">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="#" class="menu__link">Modellen</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Kopen</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Huren</a>
-								</li>
-								<li class="menu__item">
-									<a href="#" class="menu__link">Nieuws</a>
-								</li>
-							</ul>
-   
-						</nav>
-						<button class="header__button" type="button">
-							Contact
-
-						</button>
-					</div>
-				</div>
-			</header>
-			<main class="page">
-				<section class="page__main">
-					<div class="main-section__container">
-						<div class="main-section__content">
-							<div class="main-section__label">Duurzame tiny huisjes</div>
-							<h1 class="main-section_title title">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h1>
-
-							
-						</div>
-						<a href="#" class="main-section__video-link">Bekijk de film</a>
-
-					</div>
-					<div class="main-section__image">
-						<img src="img/Bitmap.jpg" alt="#">
-					</div>
-				</section>
-					
-			</main>
-			<footer class="footer">
-						
-			</footer>
-		</div>
-		<div></div>
-		
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-
-		
-
-
-		
-			
-		
-
-			
+		<h1>Последние посты</h1>
+		{% for post in posts %}
+			<div class="post">
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.text }}</p>
+			</div>
+		{% endfor %}
 	</body>
+		
+		
+		
+		
+		
+		
+
+		
+		
+
+		
+
+
+		
+			
+		
+
+			
+	
 	
 </html>
